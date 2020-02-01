@@ -57,13 +57,13 @@
         Funzioni
       </div>
 
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="utenti.html">
           <i class="far fa-address-card"></i>
           <span>Utenti</span></a>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="libri.html">
           <i class="fas fa-book"></i>
           <span>Libri</span></a>
@@ -200,7 +200,7 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                  Login
                 </a>
               </div>
             </li>
@@ -215,10 +215,10 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Lista Utenti</h1>
+            <h1 class="h3 mb-0 text-gray-800">Lista Libri</h1>
             <a href="#" class="btn btn-success btn-icon-split">
               <span class="icon text-white-50">
-                <i class="fas fa-user-plus"></i>
+                <i class="fas fa-book-medical"></i>
               </span>
               <span class="text">Aggiungi</span>
             </a>
@@ -235,23 +235,25 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Abilitato</th>
-                      <th>Cognome</th>
-                      <th>Data Attivazione</th>
-                      <th>Email</th>
-                      <th>Nome</th>
-                      <th>Password</th>
+                      <th>Titolo</th>
+                      <th>Autore</th>
+                      <th>Editore</th>
+                      <th>Anno</th>
+                      <th>Categoria</th>
+                      <th>File</th>
+                      <th>Disponibile</th>
                       <th>Azioni</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Abilitato</th>
-                      <th>Cognome</th>
-                      <th>Data Attivazione</th>
-                      <th>Email</th>
-                      <th>Nome</th>
-                      <th>Password</th>
+                      <th>Titolo</th>
+                      <th>Autore</th>
+                      <th>Editore</th>
+                      <th>Anno</th>
+                      <th>Categoria</th>
+                      <th>File</th>
+                      <th>Disponibile</th>
                       <th>Azioni</th>
                     </tr>
                   </tfoot>
@@ -261,6 +263,7 @@
                       <td>System Architect</td>
                       <td>Edinburgh</td>
                       <td>61</td>
+                      <td>2011/04/25</td>
                       <td>2011/04/25</td>
                       <td>$320,800</td>
                       <td><btn type="button" class="btn btn-primary btn-circle btn-azione" data-toggle="modal" data-target=".bd-example-modal-lg">
@@ -279,9 +282,10 @@
                       <td>Tokyo</td>
                       <td>63</td>
                       <td>2011/07/25</td>
+                      <td>2011/04/25</td>
                       <td>$170,750</td>
                       <td><btn type="button" class="btn btn-primary btn-circle btn-azione" data-toggle="modal" data-target=".bd-example-modal-lg">
-                        <i class="far fa-eye"></i><div class="d-n">Visualizza Dettagli</div>
+                        <i class="far fa-eye"></i>
                       </btn>
                       <btn type="button" class="btn btn-secondary btn-circle btn-azione" data-toggle="modal" data-target=".modifica-modal">
                         <i class="fas fa-pen"></i>
@@ -296,6 +300,7 @@
                       <td>San Francisco</td>
                       <td>66</td>
                       <td>2009/01/12</td>
+                      <td>2011/04/25</td>
                       <td>$86,000</td>
                       <td><btn type="button" class="btn btn-primary btn-circle btn-azione" data-toggle="modal" data-target=".bd-example-modal-lg">
                         <i class="far fa-eye"></i><div class="d-n">Visualizza Dettagli</div>
@@ -313,6 +318,7 @@
                       <td>London</td>
                       <td>21</td>
                       <td>2009/02/27</td>
+                      <td>2011/04/25</td>
                       <td>$103,500</td>
                       <td><btn type="button" class="btn btn-primary btn-circle btn-azione" data-toggle="modal" data-target=".bd-example-modal-lg">
                         <i class="far fa-eye"></i><div class="d-n">Visualizza Dettagli</div>
@@ -330,6 +336,7 @@
                       <td>San Francisco</td>
                       <td>30</td>
                       <td>2010/07/14</td>
+                      <td>2011/04/25</td>
                       <td>$86,500</td>
                       <td><btn type="button" class="btn btn-primary btn-circle btn-azione" data-toggle="modal" data-target=".bd-example-modal-lg">
                         <i class="far fa-eye"></i><div class="d-n">Visualizza Dettagli</div>
@@ -347,6 +354,7 @@
                       <td>Edinburgh</td>
                       <td>51</td>
                       <td>2008/11/13</td>
+                      <td>2011/04/25</td>
                       <td>$183,000</td>
                       <td><btn type="button" class="btn btn-primary btn-circle btn-azione" data-toggle="modal" data-target=".bd-example-modal-lg">
                         <i class="far fa-eye"></i><div class="d-n">Visualizza Dettagli</div>
@@ -364,6 +372,7 @@
                       <td>Singapore</td>
                       <td>29</td>
                       <td>2011/06/27</td>
+                      <td>2011/04/25</td>
                       <td>$183,000</td>
                       <td><btn type="button" class="btn btn-primary btn-circle btn-azione" data-toggle="modal" data-target=".bd-example-modal-lg">
                         <i class="far fa-eye"></i><div class="d-n">Visualizza Dettagli</div>
@@ -381,6 +390,7 @@
                       <td>New York</td>
                       <td>27</td>
                       <td>2011/01/25</td>
+                      <td>2011/04/25</td>
                       <td>$112,000</td>
                       <td><btn type="button" class="btn btn-primary btn-circle btn-azione" data-toggle="modal" data-target=".bd-example-modal-lg">
                         <i class="far fa-eye"></i><div class="d-n">Visualizza Dettagli</div>
@@ -445,137 +455,137 @@
     </div>
   </div>
 
-    <!-- Data Row Modal-->
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Visualizza</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputCity">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
-                  </label>
-                </div>
-              </div>
-            
-          </div>
-            
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-primary">Save changes</button>
-            </div>
-          </form>
+  <!-- Data Row Modal-->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Visualizza</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+          
+        </div>
+          
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
       </div>
     </div>
-  
-    <!-- Data Row Modal-->
-    <div class="modal fade modifica-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modifica</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputCity">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
-                  </label>
-                </div>
-              </div>
-            
-          </div>
-            
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-primary">Save changes</button>
-            </div>
-          </form>
+  </div>
+
+  <!-- Data Row Modal-->
+  <div class="modal fade modifica-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modifica</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+          
+        </div>
+          
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
